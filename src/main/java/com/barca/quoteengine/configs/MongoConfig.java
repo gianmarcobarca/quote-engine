@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.config.EnableMongoAuditing;
 import org.springframework.data.mongodb.core.mapping.event.ValidatingMongoEventListener;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 
-@Configuration("MongoConfig")
+@Configuration("mongoConfig")
 @EnableMongoAuditing // generates document timestamps
 public class MongoConfig {
   @Bean
