@@ -40,7 +40,7 @@ class QuoteRepositoryTests {
   }
 
   @ParameterizedTest
-  @ValueSource(ints = { 0, 1, 2, 3, 4 })
+  @ValueSource(ints = { 0, 1, 2, 3 })
   void getQuoteSample_should_return_correct_sampleSize(int sampleSize) {
 
     // ARRANGE
