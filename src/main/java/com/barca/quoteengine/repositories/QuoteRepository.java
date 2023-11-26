@@ -11,5 +11,5 @@ import com.barca.quoteengine.model.Quote;
 public interface QuoteRepository extends MongoRepository<Quote, String> {
 
   @Aggregation("{$sample: {size: ?0}}")
-  List<QuoteResponseDto> getQuoteSample(int num);
+  List<QuoteResponseDto> getQuoteSample(int sampleSize);
 }
